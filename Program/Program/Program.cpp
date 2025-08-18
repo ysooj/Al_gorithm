@@ -2,89 +2,95 @@
 
 using namespace std;
 
-// 1. 두 개의 자연수 x, y가 있을 때
-//    x와 y를 나눈 나머지를 r이라고 합니다.
-
-// 2. r이 0이라면, x와 y의 최대공약수가 y가 됩니다.
-
-// 3. r이 0이 아니라면, x와 y의 최대 공약수는 y와 r의 최대 공약수와 같기 때문에
-//    x에는 y 그리고 y에는 r을 대입한 후 1번으로 돌아가면 됩니다.
-
-int Max(int x, int y)
+void Prime(int n)
 {
-	int r = x % y;
-
-	if (r == 0)
+	for (int i = 2; i <= n; i++)
 	{
-		return y;
+		bool isPrime = true;
+
+		for (int j = 2; j < i; j++)
+		{
+			if (i % j == 0)
+			{
+				isPrime = false;
+
+				break;
+			}
+		}
+
+		if (isPrime == true)
+		{
+			cout << i << " ";
+		}
+	}
+}
+
+void sieve(int n)
+{
+	int * array = new int[n + 1];
+
+	for (int i = 0; i < n; i++)
+	{
+		array[i] = i;
 	}
 
-	return Max(y, r);
+	array[0] = 0;
+	array[1] = 0;
+
+	for (int i = 2; i * i <= n; i++)
+	{
+		for (int j = i * i; j <= n; j += i)
+		{
+			array[j] = 0;
+		}
+	}
+
+	for (int i = 2; i < n; i++)
+	{
+		if (array[i] != 0)
+		{
+			cout << array[i] << " ";
+		}
+	}
 }
 
 int main()
 {
-#pragma region 유클리드 호제법 - 내 코드
-	//	// 2개의 자연수 또는 정식의 최대 공약수를 구하는 방식으로
-	//	// 두 수가 서로 상대방 수를 나누어서 원하는 수를 얻어내는 알고리즘입니다.
+#pragma region 에라토스테네스의 체
+	// 소수 : 1과 자기 자신 이외에 나누어 떨어지지 않는 수
+	// ex) 2, 3, 5, 7, 11, 13, 17, 19
+
+	// 2 ~ n까지 소수를 출력하는 알고리즘 만들기
+
+	//	Prime(20);
+
+	//	// 선생님 버전
+	//	int j = 0;
+	//	int n = 0;
 	//	
-	//	int num1 = 24;
-	//	int num2 = 36;
+	//	std::cin >> n;
 	//	
-	//	int max = 1;
-	//	
-	//	if (num1 > num2)
+	//	for (int i = 2; i <= n; i++)
 	//	{
-	//		for (int i = 1; i < num1; i++)
+	//		for (j = 2; j < n; j++)
 	//		{
-	//			if (num1 % i == 0 && num2 % i == 0)
+	//			if (i % j == 0)
 	//			{
-	//				max = i;
+	//				break;
 	//			}
 	//		}
-	//	}
 	//	
-	//	else
-	//	{
-	//		for (int i = 1; i < num2; i++)
+	//		if (i == j)
 	//		{
-	//			if (num1 % i == 0 && num2 % i == 0)
-	//			{
-	//				max = i;
-	//			}
+	//			cout << i << " ";
 	//		}
 	//	}
-	//	
-	//	cout << max << endl;
+	//	// 현재는 시간 복잡도가 0(n²).
+	//	// 이걸 에라토스테네스의 채를 통해 0(n log log n)까지 줄일 것이다.
+	//	// 0(n * log(log n))은 0(log n)보다는 느리지만(log n은 진짜 빠르다고 한다.) 비슷하게 빠르다고 한다.
+
+	sieve(100);
 #pragma endregion
-
-#pragma region 유클리드 호제법 - 선생님 코드
-	//	int x = 72;
-	//	int y = 109;
-	//	
-	//	int result = 0;
-	//	
-	//	for (int i = 1; i <= x && i <= y; i++)
-	//	{
-	//		if (x % i == 0 && y % i == 0)
-	//		{
-	//			result = i;
-	//		}
-	//	}
-	//	
-	//	cout << "최대 공약수 : " << result << endl;
-#pragma endregion
-
-#pragma region 유클리드 호제법 - 최종
-	int x = 24;
-	int y = 36;
-
-	int result = Max(x, y);
-
-	cout << result << endl;
-#pragma endregion
-
-
 
 	return 0;
 }
