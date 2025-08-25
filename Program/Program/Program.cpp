@@ -2,102 +2,67 @@
 
 using namespace std;
 
-// 공간 복잡도는 O(n)
-// 시간 복잡도는 O(n log n)
-
-// 두 개의 정렬된 부분 배열을 병합하는 함수
-void combine(int list[], int start, int middle, int end)
+int fibonacci(int n)
 {
-	int left = start;		// 왼쪽 부분 배열의 시작 인덱스
-	int right = middle + 1;	// 오른쪽 부분 배열의 시작 인덱스 (중요: middle 바로 다음이 시작)
-	int count = 0;			// combineList 배열에서 현재 저장할 위치
-	
-
-	// 병합 결과를 임시로 저장할 동적 배열 생성
-	// [start ~ end] 범위를 커버해야 하므로, 총 개수는 end - start + 1
-	int * container = new int[end - start + 1];
-
-	// 두 부분의 배열을 병합합니다.
-	// 두 부분 배열이 모두 남아 있을 때까지 비교하며 작은 값을 먼저 저장
-	while (left <= middle && right <= end)
+	if (n <= 0)
 	{
-		if (list[left] <= list[right])	// 왼쪽 값이 작거나 같으면
-		{
-			container[count++] = list[left++];	// 작은 값을 병합 배열에 저장
-		}
-		else	// 오른쪽 값이 더 작으면
-		{
-			container[count++] = list[right++];
-		}
+		// cout << "n이 0보다 작습니다." << endl;
+		return 0;
 	}
-	
-	// 왼쪽 배열에 남은 요소들을 전부 복사
-	while (left <= middle)
+	else if (n <= 2)
 	{
-		container[count++] = list[left++];
+		return 1;
 	}
 
-	// 오른쪽 배열에 남은 요소들을 전부 복사
-	while (right <= end)
-	{
-		container[count++] = list[right++];
-	}
-
-	// 병합 결과를 원래 배열의 정렬 대상 범위에 덮어쓰기
-	// 원래 배열의 인덱스는 start부터 시작해야 하므로 start + i 사용
-	for (int i = 0; i < end - start + 1; i++)
-	{
-		list[start + i] = container[i];	// 꼭 start + i로 해야 함!
-										// 병합 결과를 원래 배열의 정확한 위치에 덮어쓰기 위해 필요
-	}
-
-	delete [] container;	// 동적 할당 해제 (메모리 누수 방지)
+	return fibonacci(n-1) + fibonacci(n-2);
 }
 
-// 배열을 재귀적으로 반으로 나누고, 다시 병합 정렬하는 함수
-void merge_sort(int list[], int start, int end)
+int fibonacci(int n, int list[])
 {
-	// 정렬할 구간의 크기가 2개 이상일 때만 진행
-	if (start < end)
+	if (n <= 0)
 	{
-		int middle = (start + end) / 2;	// 중간 지점 계산
-
-		// 왼쪽 절반 정렬
-		merge_sort(list, start, middle);
-		// 오른쪽 절반 정렬
-		merge_sort(list, middle + 1, end);
-
-		// 정렬된 두 부분 배열 병합
-		combine(list, start, middle, end);
+		return 0;
 	}
+	else if (n <= 2)
+	{
+		return 1;
+	}
+
+	if (list[n] != 0)
+	{
+		return list[n];
+	}
+
+	return list[n] = fibonacci(n - 1, list) + fibonacci(n - 2, list);
 }
 
 int main()
 {
-#pragma region 합병 정렬
-	// 하나의 리스트를 두 개의 균일한 크기로 분할하고, 분할된 부분 리스트를 정렬한 다음
-	// 두 개의 정렬된 부분 리스트를 합하여 전체가 정렬된 리스트가 되게 하는 방법입니다.
+#pragma region 동적 계획법
+	// 하나의 큰 문제를 여러 개의 작은 문제로 나누어서
+	// 그 결과를 저장하여 다시 큰 문제를 해결할 때 사용하는 알고리즘입니다.
 
-	// 1. 리스트의 길이가 0 또는 1이 되면, 이미 정렬된 것으로 봅니다.
+	// 겹치는 부분 문제 (Overlapping Subproblems)
+	// 동일한 작은 문제들이 반복하여 나타나는 경우를 의미합니다.
 
-	// 2. 그렇지 않은 경우
-	
-	// 2-1. 정렬되지 않은 리스트를 절반으로 잘라, 비슷한 크기의 두 부분 리스트로 나눕니다.
-	
-	// 2-2. 각 부분 리스트를 재귀적으로 합병 정렬을 이용하여 정렬합니다.
-	
-	// 2-3. 두 부분 리스트를 다시 하나의 정렬된 리스트로 병합합니다.
+	// 최적 부분 구조 (Optimal Substructure)
+	// 부분 문제의 최적 결과 값을 사용하여, 전체 문제의 최적의 결과를 낼 수 있는 경우를 의미합니다.
 
-	int list[] = { 3, 5, 2, 7, 4, 1, 8, 6 };
+	// 메모이제이션 (Memoization)
+	// 프로그램이 동일한 계산을 반복해야할 때, 이전에 계산한 값을 메모리에 저장함으로써
+	// 동일한 계산을 반복 수행하는 작업을 제거하여 프로그램의 실행 속도를 향상시키는 방법입니다.
 
-	int size = sizeof(list) / sizeof(list[0]);
+	int n = 45;
 
-	merge_sort(list, 0, size - 1);
+	int * list = new int[n + 1] {0};	// 배열을 0으로 초기화
 
-	for (const auto & element : list)
-	{
-		cout << element << " ";
-	}
+	// 메모이제이션에서 list[n] != 0이면 이미 계산된 값으로 판단합니다.
+	// 초기값이 0이므로, 아직 계산되지 않은 상태를 구분할 수 있습니다.
+	// 피보나치 수열 0번째 항이 0이므로 이 방식이 맞습니다.
+
+	cout << "피보나치 수열 (" << n << ") : " << fibonacci(n, list) << endl;
+
+	delete [] list;
 #pragma endregion
 
 	return 0;
