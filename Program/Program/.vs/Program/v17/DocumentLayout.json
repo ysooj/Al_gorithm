@@ -1,79 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Program\\",
+  "WorkspaceRootPath": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0520DD92-D5F0-4C7E-B20F-14A978C48AAB}|Program.vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{0520DD92-D5F0-4C7E-B20F-14A978C48AAB}|Program.vcxproj|C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0520DD92-D5F0-4C7E-B20F-14A978C48AAB}|Program.vcxproj|solutionrelative:Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BD56658-47DA-4F21-ADF1-689FF99E3346}|..\\Class16th (Breadth First Search)\\Class16th (Breadth First Search).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class16th (Breadth First Search)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{473588A3-14A0-4DD8-A5AD-0D3C7A7E4A7D}|..\\Class15th (Depth First Search)\\Class15th (Depth First Search).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class15th (Depth First Search)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\deque||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E28EB15-ACA4-437E-8F26-EAADD44E5DF4}|..\\Class14th (Greedy)\\Class14th (Greedy).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class14th (Greedy)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{498F049B-EA6C-4DE7-83C2-41EDAC5AD2C6}|..\\Class13th (Dynamic Programing)\\Class13th (Dynamic Programing).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class13th (Dynamic Programing)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F0C2B01C-5C06-4288-990C-48BF2B816D75}|..\\Class12th (Merge Sort)\\Class12th (Merge Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class12th (Merge Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{727A1C86-5E53-44C4-86CD-1E4EC795F098}|..\\Class9th (Divide and Conquer)\\Class9th (Divide and Conquer).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class9th (Divide and Conquer)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A6052AFF-9818-4DCC-B511-62E0F164BCB6}|..\\Class10th (Two Pointer)\\Class10th (Two Pointer).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class10th (Two Pointer)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9955E355-4F72-497E-BE10-864CAF0C5BAF}|..\\Class1th (A)\\Class1th (A).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A647CD2-75B5-4373-83CD-A2622965E8F8}|..\\Class4th (Select Sort)\\Class4th (Select Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D136D9C7-21B9-4CD4-AE24-BD8248C555DF}|..\\Class11th (Quick Sort)\\Class11th (Quick Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class11th (Quick Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A9679DA-DDEE-466E-86E4-741D2D2C6CB4}|..\\Class8th (Count Sort)\\Class8th (Count Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class8th (Count Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B6976DE2-435A-467A-AB76-2103344DACA4}|..\\Class7th (Sieve of Eratosthenes)\\Class7th (Sieve of Eratosthenes).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class7th (Sieve of Eratosthenes)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{557BCF09-1E4A-4C23-8BDE-17357AFDF824}|..\\Class6th (Euclideann)\\Class6th (Euclideann).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class6th (Euclideann)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8176F11F-6DFA-446C-B7A5-B7A57F1288DD}|..\\Class5th (Insert Sort)\\Class5th (Insert Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F72E25C2-8B59-47B7-B021-F7CE06262BAB}|..\\Class3th (Bubble Sort)\\Class3th (Bubble Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class3th (Bubble Sort)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2F28448-47E7-41B6-9E86-D8C674B9118E}|..\\Class2th (Brute Force)\\Class2th (Brute Force).vcxproj|C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2BD56658-47DA-4F21-ADF1-689FF99E3346}|..\\Class16th (Breadth First Search)\\Class16th (Breadth First Search).vcxproj|C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class16th (Breadth First Search)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -83,7 +17,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -93,292 +27,27 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class16th (Breadth First Search)\\Source.cpp",
+              "DocumentMoniker": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class16th (Breadth First Search)\\Source.cpp",
               "RelativeDocumentMoniker": "..\\Class16th (Breadth First Search)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class16th (Breadth First Search)\\Source.cpp",
+              "ToolTip": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class16th (Breadth First Search)\\Source.cpp",
               "RelativeToolTip": "..\\Class16th (Breadth First Search)\\Source.cpp",
-              "ViewState": "AgIAADoAAAAAAAAAAAAowEsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-28T12:17:38.349Z",
+              "WhenOpened": "2025-08-29T11:07:09.82Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "deque",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\deque",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\deque",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\deque",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\deque",
-              "ViewState": "AgIAADgEAAAAAAAAAIAwwEoEAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-28T11:17:36.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class15th (Depth First Search)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class15th (Depth First Search)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class15th (Depth First Search)\\Source.cpp",
-              "RelativeToolTip": "..\\Class15th (Depth First Search)\\Source.cpp",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-27T12:21:39.698Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "vector",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\vector",
-              "ViewState": "AgIAAGoHAAAAAAAAAAAmwHoHAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-26T12:35:03.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class14th (Greedy)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class14th (Greedy)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class14th (Greedy)\\Source.cpp",
-              "RelativeToolTip": "..\\Class14th (Greedy)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-26T11:44:38.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class13th (Dynamic Programing)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class13th (Dynamic Programing)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class13th (Dynamic Programing)\\Source.cpp",
-              "RelativeToolTip": "..\\Class13th (Dynamic Programing)\\Source.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAswEQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-26T11:02:09.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class12th (Merge Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class12th (Merge Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class12th (Merge Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\Class12th (Merge Sort)\\Source.cpp",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAswGcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-25T11:03:08.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class8th (Count Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class8th (Count Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class8th (Count Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\Class8th (Count Sort)\\Source.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-19T11:46:51.514Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class7th (Sieve of Eratosthenes)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class7th (Sieve of Eratosthenes)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class7th (Sieve of Eratosthenes)\\Source.cpp",
-              "RelativeToolTip": "..\\Class7th (Sieve of Eratosthenes)\\Source.cpp",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-19T11:10:52.384Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class5th (Insert Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\Class5th (Insert Sort)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-18T11:02:08.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp",
-              "ToolTip": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-15T07:09:31.832Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Program\\Program.cpp",
+              "DocumentMoniker": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Program\\Program.cpp",
               "RelativeDocumentMoniker": "Program.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Program\\Program.cpp",
+              "ToolTip": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Program\\Program.cpp",
               "RelativeToolTip": "Program.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAmwGUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-13T11:01:30.828Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "utility",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\utility",
-              "ViewState": "AgIAAHYAAAAAAAAAAADgv4kAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-21T12:15:59.659Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class11th (Quick Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class11th (Quick Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class11th (Quick Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\Class11th (Quick Sort)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-22T11:03:28.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class10th (Two Pointer)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class10th (Two Pointer)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class10th (Two Pointer)\\Source.cpp",
-              "RelativeToolTip": "..\\Class10th (Two Pointer)\\Source.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-20T12:23:43.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class9th (Divide and Conquer)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class9th (Divide and Conquer)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class9th (Divide and Conquer)\\Source.cpp",
-              "RelativeToolTip": "..\\Class9th (Divide and Conquer)\\Source.cpp",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-20T11:17:21.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp",
-              "ToolTip": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-15T06:49:48.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class5th (Insert Sort)\\Source.cpp",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwC8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-14T11:46:21.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class6th (Euclideann)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class6th (Euclideann)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class6th (Euclideann)\\Source.cpp",
-              "RelativeToolTip": "..\\Class6th (Euclideann)\\Source.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-18T11:12:14.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\82103\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp",
-              "ViewState": "AgIAACcAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-14T11:02:03.94Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class4th (Select Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class4th (Select Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\Class4th (Select Sort)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-13T12:35:16.829Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class3th (Bubble Sort)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class3th (Bubble Sort)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class3th (Bubble Sort)\\Source.cpp",
-              "RelativeToolTip": "..\\Class3th (Bubble Sort)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-13T11:41:27.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class2th (Brute Force)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class2th (Brute Force)\\Source.cpp",
-              "RelativeToolTip": "..\\Class2th (Brute Force)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-13T11:05:41.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp",
-              "RelativeDocumentMoniker": "..\\Class1th (A)\\Source.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\Al_gorithm\\Program\\Class1th (A)\\Source.cpp",
-              "RelativeToolTip": "..\\Class1th (A)\\Source.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-13T11:05:11.762Z"
             }
           ]
         }
