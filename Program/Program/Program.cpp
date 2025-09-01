@@ -1,111 +1,58 @@
 ﻿#include <iostream>
-#include <unordered_map>
-#include <unordered_set>
-#include <queue>
+#include <vector>
+
+#define INFINITY 10000000
 
 using namespace std;
 
-template <typename T>
-
-class Graph
+class Dijkstra
 {
 private:
-	unordered_map <T, vector<T>> adjacencyList;
-	unordered_map <T, int> degree;
-	unordered_set <T> vertices;
+	vector <vector <int>> adjacencyMatrix;
+	vector <int> visited;
+	vector <int> distance;
+
+	int size = 0;
+	int newSize;
 public:
-
-	void insert(const T & i, const T & j)
+	void insert(int i, int j, int weight)
 	{
-		adjacencyList[i].push_back(j);
-		degree[j]++;
-
-		vertices.insert(i);
-		vertices.insert(j);
-
-		if (degree.count(i) == false)
+		newSize = max(i, j) + 1;
+		
+		if (newSize > size)
 		{
-			degree[i] = 0;
+			resize(newSize);
 		}
+
+		adjacencyMatrix[i][j] = weight;
 	}
 
-	void search()
+	void resize(int node)
 	{
-		queue <T> queue;
-		vector <T> forPrint;
+		newSize = node + 1;
 
-		for (const auto& element : vertices)
-		{
-			if (degree[element] == 0)
-			{
-				queue.push(element);
-			}
-		}
-
-		while (queue.empty() == false)
-		{
-			T x = queue.front();
-
-			queue.pop();
-
-			forPrint.push_back(x);
-
-			for (const T & element : adjacencyList[x])
-			{
-				degree[element]--;
-
-				if (degree[element] == 0)
-				{
-					queue.push(element);
-				}
-			}
-		}
-
-		for (const T & element : forPrint)
-		{
-			cout << element << " ";
-		}
+		// stl 함수인 resize 함수 이용하기. 재귀 함수 아님 주의!
 	}
 };
 
 int main()
 {
-#pragma region 위상 정렬
-	// Topological Sort
-	// 병합 그래프에 존재하는 각 정점들의 선행 순서를 지키며,
-	// 모든 정점을 차례대로 진행하는 방식의 정렬입니다.
-
-	// 사이클이 발생하는 경우, 위상 정렬을 수행할 수 없습니다.
-
-	// DAG (Directed Acyclic Graph) : 사이클이 존재하지 않는 그래프
+#pragma region 다익스트라 알고리즘
+	// 길찾기 알고리즘
 	
-	// 시간 복잡도 : 0(V + E) ; 정점(Vertex), 간선(Edge)
+	// 시작점으로부터 모든 노드까지의 최소 거리를 구해주는 알고리즘입니다.
 
-	// 위상 정렬하는 방법
-	// 1. 진입 차수가 0인 정점을 Queue에 삽입합니다.
-	// 2. Queue에서 원소를 꺼내 연결된 모든 간선을 제거합니다.
-	// 3. 간선 제거 이후에 진입 차수가 0이 된 정점을 Queue에 삽입합니다.
-	// 4. Queue가 비어있을 때까지 2번 ~ 3번 작업을 반복적으로 수행합니다.
+	// 1. 거리 배열에서 weight[시작 노드]의 값들로 초기화합니다.
+	// 2. 시작점을 방문 처리합니다.
+	// 3. 거리 배열에서 최소 비용 노드를 찾고 방문 처리합니다.
+	// 4. 최소 비용 노드를 거쳐갈 지 고민해서 거리 배열을 갱신합니다.
+	//	  단, 이미 방문한 노드는 제외합니다.
+	// 5. 모든 노드를 방문할 때까지 3~4번 반복합니다.
 
-	// 진입 차수 : in-degree. 한 정점으로 들어오는 간선의 개수 → 해당 노드를 의존하는 노드 수
-	// 진출 차수 : out-degree. 한 정점에서 나가는 간선의 개수 → 해당 노드가 의존하는 다른 노드 수
-
-	Graph <int> graph;
-
-	graph.insert(1, 2);
-	graph.insert(1, 5);
-
-	graph.insert(2, 3);
-
-	graph.insert(3, 4);
-
-	graph.insert(4, 6);
-
-	graph.insert(5, 6);
-
-	graph.insert(6, 7);
-
-	graph.search();
+	// 방문하지 않은 노드 중에서 가장 작은 거리를 가진 노드를 방문하고
+	// 그 노드와 연결된 다른 노드까지의 거리를 계산합니다.
+	
+	// 시간복잡도 : v²(vertex의 제곱)
 #pragma endregion
 
 	return 0;
