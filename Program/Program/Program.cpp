@@ -1,37 +1,107 @@
 ﻿#include <iostream>
 #include <vector>
 
-#define INFINITY 10000000
-
 using namespace std;
+
+#define INFINITY 10000000
 
 class Dijkstra
 {
 private:
-	vector <vector <int>> adjacencyMatrix;
-	vector <int> visited;
-	vector <int> distance;
-
-	int size = 0;
-	int newSize;
+	vector<int> distance;
+	vector<bool> visited;
+	vector<vector<int>> graph;
 public:
-	void insert(int i, int j, int weight)
+	void Resize(int node)
 	{
-		newSize = max(i, j) + 1;
-		
-		if (newSize > size)
+		int newSize = node + 1;
+
+		if (graph.size() < newSize)
 		{
-			resize(newSize);
+			int previousSize = graph.size();
+
+			graph.resize(newSize);
+
+			for (int i = previousSize; i < newSize; i++)
+			{
+				graph[i].resize(newSize, INFINITY);
+			}
+
+			for (int i = 0; i < previousSize; i++)
+			{
+				graph[i].resize(newSize, INFINITY);
+			}
+
+			for (int i = previousSize; i < newSize; i++)
+			{
+				graph[i][i] = 0;
+			}
 		}
 
-		adjacencyMatrix[i][j] = weight;
+		if (visited.size() < newSize)
+		{
+			visited.resize(newSize, false);
+			distance.resize(newSize, INFINITY);
+		}
 	}
 
-	void resize(int node)
+	void insert(int i, int j, int weight)
 	{
-		newSize = node + 1;
+		Resize(max(i, j));
 
-		// stl 함수인 resize 함수 이용하기. 재귀 함수 아님 주의!
+		graph[i][j] = weight;
+		graph[j][i] = weight;
+	}
+
+	const int & find()
+	{
+		int index = 0;
+		int min = INFINITY;
+
+		for (int i = 0; i < distance.size(); i++)
+		{
+			if (distance[i] < min && visited[i] == false)
+			{
+				min = distance[i];
+				index = i;
+			}
+		}
+
+		return index;
+	}
+
+	void update(int start)
+	{
+		for (int i = 0; i < graph.size(); i++)
+		{
+			distance[i] = graph[start][i];
+		}
+
+		visited[start] = true;
+
+		cout << find() << endl;
+	}
+
+	void dijkstra(int minIndex)
+	{
+		for (int i = 0; i < distance.size(); i++)
+		{
+			visited[minIndex] = true;
+
+			if (visited[i] == false && )
+			{
+				distance[i] = distance[minIndex];
+
+			}
+
+			minIndex = find();
+
+		}
+
+		for (const auto& element : distance)
+		{
+			cout << element << " ";
+		}
 	}
 };
 
@@ -53,6 +123,26 @@ int main()
 	// 그 노드와 연결된 다른 노드까지의 거리를 계산합니다.
 	
 	// 시간복잡도 : v²(vertex의 제곱)
+
+	Dijkstra dijkstra;
+
+	// 간선 추가: graph.insert(시작노드, 도착노드, 가중치);
+	dijkstra.insert(1, 2, 2);
+	dijkstra.insert(1, 3, 5);
+	dijkstra.insert(1, 4, 1);
+
+	dijkstra.insert(2, 3, 3);
+	dijkstra.insert(2, 4, 2);
+
+	dijkstra.insert(3, 4, 3);
+	dijkstra.insert(3, 5, 1);
+	dijkstra.insert(3, 6, 5);
+
+	dijkstra.insert(4, 5, 1);
+
+	dijkstra.insert(5, 6, 2);
+
+	dijkstra.update(1);
 #pragma endregion
 
 	return 0;
