@@ -1,168 +1,69 @@
 ﻿#include <iostream>
-#include <vector>
 
 using namespace std;
 
-#define INFINITY 10000000
-
-class Dijkstra
-{
-private:
-	vector<int> distance;
-	vector<bool> visited;
-	vector<vector<int>> graph;
-public:
-	void Resize(int node)
-	{
-		int newSize = node + 1;
-
-		if (graph.size() < newSize)
-		{
-			int previousSize = graph.size();
-
-			graph.resize(newSize);
-
-			for (int i = previousSize; i < newSize; i++)
-			{
-				graph[i].resize(newSize, INFINITY);
-			}
-
-			for (int i = 0; i < previousSize; i++)
-			{
-				graph[i].resize(newSize, INFINITY);
-			}
-
-			for (int i = previousSize; i < newSize; i++)
-			{
-				graph[i][i] = 0;
-			}
-		}
-
-		if (visited.size() < newSize)
-		{
-			visited.resize(newSize, false);
-			distance.resize(newSize, INFINITY);
-		}
-	}
-
-	void insert(int i, int j, int weight)
-	{
-		Resize(max(i, j));
-
-		graph[i][j] = weight;
-		graph[j][i] = weight;
-	}
-
-	const int & find()
-	{
-		int index = 0;
-		int min = INFINITY;
-
-		for (int i = 0; i < distance.size(); i++)
-		{
-			if (distance[i] < min && visited[i] == false)
-			{
-				min = distance[i];
-				index = i;
-			}
-		}
-
-		return index;
-	}
-
-	void update(int start)
-	{
-		for (int i = 0; i < graph.size(); i++)
-		{
-			distance[i] = graph[start][i];
-		}
-
-		visited[start] = true;
-
-		cout << find() << endl;
-	}
-
-	void dijkstra(int start)
-	{
-		// 시작 노드에서 거리 배열 초기화
-		for (int i = 0; i < graph.size(); i++)
-		{
-			distance[i] = graph[start][i];
-		}
-		visited[start] = true;
-		distance[start] = 0;
-
-		// 모든 노드를 방문할 때까지 반복
-		for (int count = 0; count < distance.size() - 1; count++)
-		{
-			int minIndex = find();
-			if (minIndex == -1) break; // 방문할 노드가 더 이상 없으면 종료
-			visited[minIndex] = true;
-
-			// 거리 갱신
-			for (int i = 0; i < graph.size(); i++)
-			{
-				if (!visited[i] && distance[minIndex] + graph[minIndex][i] < distance[i])
-				{
-					distance[i] = distance[minIndex] + graph[minIndex][i];
-				}
-			}
-		}
-
-		// 결과 출력
-		cout << start << "번 노드에서 시작했을 때 최단 거리:" << endl;
-		for (int i = 1; i < distance.size(); i++) // 0번은 더미 노드라서 제외
-		{
-			cout << " → " << i << "번 노드까지: ";
-			if (distance[i] == INFINITY)
-				cout << "도달 불가" << endl;
-			else
-				cout << distance[i] << endl;
-		}
-		cout << endl;
-	}
-};
-
 int main()
 {
-#pragma region 다익스트라 알고리즘
-	// 길찾기 알고리즘
-	
-	// 시작점으로부터 모든 노드까지의 최소 거리를 구해주는 알고리즘입니다.
+#pragma region 쉘 정렬
+	// 리스트를 일정한 간격에 따라 나누고, 각 부분 리스트를 삽입 정렬을 통해 정렬하는 방법입니다.
 
-	// 1. 거리 배열에서 weight[시작 노드]의 값들로 초기화합니다.
-	// 2. 시작점을 방문 처리합니다.
-	// 3. 거리 배열에서 최소 비용 노드를 찾고 방문 처리합니다.
-	// 4. 최소 비용 노드를 거쳐갈 지 고민해서 거리 배열을 갱신합니다.
-	//	  단, 이미 방문한 노드는 제외합니다.
-	// 5. 모든 노드를 방문할 때까지 3~4번 반복합니다.
+	// 1. 초기 시작 간격을 설정합니다.
 
-	// 방문하지 않은 노드 중에서 가장 작은 거리를 가진 노드를 방문하고
-	// 그 노드와 연결된 다른 노드까지의 거리를 계산합니다.
-	
-	// 시간복잡도 : v²(vertex의 제곱)
+	// 2. 간격 단위로 그룹을 묶어서 리스트를 나눕니다.
 
-	Dijkstra dijkstra;
+	// 3. 각 그룹의 n번째 원소들끼리 삽입정렬을 수행합니다.
 
-	// 간선 추가: graph.insert(시작노드, 도착노드, 가중치);
-	dijkstra.insert(1, 2, 2);
-	dijkstra.insert(1, 3, 5);
-	dijkstra.insert(1, 4, 1);
+	// 4. 간격의 크기를 반으로 줄입니다.
 
-	dijkstra.insert(2, 3, 3);
-	dijkstra.insert(2, 4, 2);
+	// 5. 간격이 1이 될 때까지 2번부터 반복합니다.
 
-	dijkstra.insert(3, 4, 3);
-	dijkstra.insert(3, 5, 1);
-	dijkstra.insert(3, 6, 5);
+	int list[] = { 14, 57, 21, 8, 36, 25, 32, 19 };
 
-	dijkstra.insert(4, 5, 1);
+	int size = sizeof(list) / sizeof(list[0]);
 
-	dijkstra.insert(5, 6, 2);
+	// 초기 간격(gap)은 배열 크기의 절반부터 시작
+	int gap = size / 2;
 
-	// 다익스트라 실행 (1번 노드 시작)
-	dijkstra.dijkstra(1);
+	// gap이 1 이상일 때까지 반복
+	// gap == 1일 때 삽입 정렬과 동일한 작업을 하며, 
+	// 이 과정을 통해 최종적으로 완전한 정렬 상태를 만듦
+	while(gap >= 1)
+	{
+		// gap 간격만큼 떨어진 요소들을 대상으로 삽입 정렬 수행
+		for (int i = gap; i < size; i++)
+		{
+			int temp = list[i];	// 삽입할 값을 임시 저장
+			int j = i;
+
+			// while문의 역할:
+			// 'temp'보다, 앞에 있는 값(list[j - gap])이 크면
+			// 그 값을 한 칸 뒤로 밀어내어 빈 공간을 만든다.
+			// 
+			// 'list[j - gap] > temp' 조건은 '앞 값이 크다'는 뜻으로,
+			// 이 조건을 통해 정렬 기준을 유지할 수 있다.
+			//
+			// 'j >= gap' 조건은 배열 범위 초과 방지용.
+			while (j >= gap && list[j - gap] > temp)
+			{
+				list[j] = list[j - gap];	// 큰 값을 뒤로 밀기
+				j -= gap;					// 비교 대상을 gap만큼 앞으로 이동
+			}
+
+			list[j] = temp;	// 빈 공간에 temp 삽입
+		}
+
+		gap /= 2;	// gap을 점점 줄여가며 점진적으로 정렬 정확도를 높임
+	}
+
+	cout << endl;
+	cout << "정렬된 배열 : ";
+	for (const auto & element : list)
+	{
+		cout << element << " ";
+	}
 #pragma endregion
 
 	return 0;
 }
+
+// 금요일 : 유니티 설치 방법 알려줄 예정
