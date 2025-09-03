@@ -82,26 +82,44 @@ public:
 		cout << find() << endl;
 	}
 
-	void dijkstra(int minIndex)
+	void dijkstra(int start)
 	{
-		for (int i = 0; i < distance.size(); i++)
+		// 시작 노드에서 거리 배열 초기화
+		for (int i = 0; i < graph.size(); i++)
 		{
+			distance[i] = graph[start][i];
+		}
+		visited[start] = true;
+		distance[start] = 0;
+
+		// 모든 노드를 방문할 때까지 반복
+		for (int count = 0; count < distance.size() - 1; count++)
+		{
+			int minIndex = find();
+			if (minIndex == -1) break; // 방문할 노드가 더 이상 없으면 종료
 			visited[minIndex] = true;
 
-			if (visited[i] == false && )
+			// 거리 갱신
+			for (int i = 0; i < graph.size(); i++)
 			{
-				distance[i] = distance[minIndex];
-
+				if (!visited[i] && distance[minIndex] + graph[minIndex][i] < distance[i])
+				{
+					distance[i] = distance[minIndex] + graph[minIndex][i];
+				}
 			}
-
-			minIndex = find();
-
 		}
 
-		for (const auto& element : distance)
+		// 결과 출력
+		cout << start << "번 노드에서 시작했을 때 최단 거리:" << endl;
+		for (int i = 1; i < distance.size(); i++) // 0번은 더미 노드라서 제외
 		{
-			cout << element << " ";
+			cout << " → " << i << "번 노드까지: ";
+			if (distance[i] == INFINITY)
+				cout << "도달 불가" << endl;
+			else
+				cout << distance[i] << endl;
 		}
+		cout << endl;
 	}
 };
 
@@ -142,7 +160,8 @@ int main()
 
 	dijkstra.insert(5, 6, 2);
 
-	dijkstra.update(1);
+	// 다익스트라 실행 (1번 노드 시작)
+	dijkstra.dijkstra(1);
 #pragma endregion
 
 	return 0;
