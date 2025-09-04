@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class17th (Topology Sort)",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class18th (Dijkstra)", "..\Class18th (Dijkstra)\Class18th (Dijkstra).vcxproj", "{46B991EC-4FBB-4AF8-B6A1-A790AEC1F80B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class19th (Shell Sort)", "..\Class19th (Shell Sort)\Class19th (Shell Sort).vcxproj", "{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -279,6 +281,18 @@ Global
 		{46B991EC-4FBB-4AF8-B6A1-A790AEC1F80B}.Release|x64.Build.0 = Release|x64
 		{46B991EC-4FBB-4AF8-B6A1-A790AEC1F80B}.Release|x86.ActiveCfg = Release|Win32
 		{46B991EC-4FBB-4AF8-B6A1-A790AEC1F80B}.Release|x86.Build.0 = Release|Win32
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Debug|Any CPU.Build.0 = Debug|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Debug|x64.ActiveCfg = Debug|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Debug|x64.Build.0 = Debug|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Debug|x86.ActiveCfg = Debug|Win32
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Debug|x86.Build.0 = Debug|Win32
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Release|Any CPU.ActiveCfg = Release|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Release|Any CPU.Build.0 = Release|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Release|x64.ActiveCfg = Release|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Release|x64.Build.0 = Release|x64
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Release|x86.ActiveCfg = Release|Win32
+		{8415F369-67E2-44B1-AD95-EC12C7BA0AC4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
